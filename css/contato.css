@@ -1,0 +1,46 @@
+.contato {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(1*62px) calc(3*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(2*62px) calc(1*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(3*62px) calc(4*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(4*62px) calc(2*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) 0 calc(4*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(1*62px) calc(2*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(2*62px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(3*62px) calc(3*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(4*62px) calc(1*62px),
+      #9880b3;
+    background-size: 310px 310px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contato__titulo {
+    color: #f7ebec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contato__subtitulo {
+    color: #f7ebec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contato__botao {
+    background-color: #f7ebec;
+    border-color: #f7ebec;
+    color: #9c83b8;
+    margin-top: 1rem;
+}
