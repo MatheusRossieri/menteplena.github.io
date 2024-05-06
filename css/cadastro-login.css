@@ -7,7 +7,6 @@ body, html {
 } 
 
 
-
 .cabecalho_container{
   background-color: #baacc8;
   padding: 10px 200px;
@@ -22,6 +21,10 @@ body, html {
   padding-top: .75rem;
   padding-bottom: .75rem;
   position: absolute;
+}
+
+.cabecalho_container{
+  color: #fff;
 }
 
 
