@@ -1,0 +1,88 @@
+.terapias {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.terapias__titulo {
+    color: #f7ebec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.terapias__subtitulo {
+    color: #f7ebec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem;
+    text-align: center;
+}
+
+.terapias__lista {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.terapias__item {
+    background-position: top 1.25rem left 2.5rem;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    max-width: 350px;
+    padding: 2rem 0 2rem 5rem;
+}
+
+.terapias__item--psica {
+    background-image: url(../img/psica.png);
+}
+
+.terapias__item--cognitiva {
+    background-image: url(../img/cognitiva.png);
+ 
+}
+
+.terapias__item--gestalt {
+    background-image: url(../img/gestalt.png);
+    
+}
+
+.item__titulo {
+    color: #f7ebec;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.item__texto {
+    color: #f7ebec;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .terapias {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(1*62px) calc(3*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(2*62px) calc(1*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(3*62px) calc(4*62px),
+      conic-gradient(at 10% 50%,#0000 75%,#9c83b8 0) calc(4*62px) calc(2*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) 0 calc(4*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(1*62px) calc(2*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(2*62px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(3*62px) calc(3*62px),
+      conic-gradient(at 50% 10%,#0000 75%,#9c83b8 0) calc(4*62px) calc(1*62px),
+      #9880b3;
+    background-size: 310px 310px;
+
+    }
+
+    .terapias__lista {
+        justify-content: space-around;
+    }
+}
