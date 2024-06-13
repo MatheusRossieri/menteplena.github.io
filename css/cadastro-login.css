@@ -4,7 +4,29 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+} 
+
+
+.cabecalho_container{
+  background-color: #baacc8;
+  padding: 10px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  position: absolute;
 }
+
+.cabecalho_container a{
+  color: #fff;
+}
+
 
   .containerform {
     background-color: #F5D5E4;
@@ -19,7 +41,9 @@ body, html {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #FABDE0;
+    background-color: #ddbdd5;  
+    color: #ffffff ;
+    font-size: 20px;
   }
   
   .login-form h2, .signup-form h2 {
@@ -37,8 +61,7 @@ body, html {
   }
   
   .login-form button, .signup-form button {
-    background-image: url("figs/medicos.jpg");
-    background-color: #a97aff;
+    background-color: #9c83b8;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -50,7 +73,7 @@ body, html {
   }
 
   .login-form input, .signup-form input{
-    background-color: #fcc5e4;
+    background-color: #ffffff;
   }
   
   a {
@@ -60,4 +83,14 @@ body, html {
     text-decoration: none;
   }
   
+
+
+  .containerform {
+    background: conic-gradient(at 10% 50%, #0000 75%, #f4e6e7 0), conic-gradient(at 10% 50%, #0000 75%, #f4e6e7 0) calc(1* 62px) calc(3* 62px), conic-gradient(at 10% 50%, #0000 75%, #f4e6e7 0) calc(2* 62px) calc(1* 62px), conic-gradient(at 10% 50%, #0000 75%, #f4e6e7 0) calc(3* 62px) calc(4* 62px), conic-gradient(at 10% 50%, #0000 75%, #f4e6e7 0) calc(4* 62px) calc(2* 62px), conic-gradient(at 50% 10%, #0000 75%, #f4e6e7 0) 0 calc(4* 62px), conic-gradient(at 50% 10%, #0000 75%, #f4e6e7 0) calc(1* 62px) calc(2* 62px), conic-gradient(at 50% 10%, #0000 75%, #f4e6e7 0) calc(2* 62px) 0, conic-gradient(at 50% 10%, #0000 75%, #f4e6e7 0) calc(3* 62px) calc(3* 62px), conic-gradient(at 50% 10%, #0000 75%, #f4e6e7 0) calc(4* 62px) calc(1* 62px), #f7ebec;
+    background-size: 310px 310px;
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+}
+
+
 
