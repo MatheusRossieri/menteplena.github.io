@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuários - Mente Plena</title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/rodape.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Cadastro de Usuários</h1>
+
+    <header class="cabecalho container">
+        <img class="cabecalho__logo" src="img/logo-menteplena.svg" alt="Logo da MentePlena">
+        <nav class="cabecalho__navegacao">
+            <ul>
+                <li class="cabecalho__link"><a href="#nav1">Artigos</a></li>
+                <li class="cabecalho__link"><a href="#nav2">Terapias</a></li>
+                <li class="cabecalho__link"><a href="#nav3">Sobre</a></li>
+                <li class="cabecalho__link"><a href="#nav4">Contato</a></li>
+                <li class="cabecalho__link"><a href="login.html">Login</a></li>
+                <li class="cabecalho__link"><a href="cadastro.html">Cadastro</a></li>
+
+                
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -34,6 +51,26 @@
             <ul id="usuarios-lista"></ul>
         </section>
     </main>
+
+    <footer class="rodape container">
+        <h2 class="rodape__titulo">Desenvolvedores</h2>
+        <img src="img/logo-menteplena2.svg" alt="Logo da menteplena" class="rodape__logo">
+        <ul class="rodape__social">
+            <li><a href="https://github.com/fabriciocustodio" class="rodape__midia">Fabrício<img src="img/github.png" alt="Ícone do Github"></a></li>
+            <li><a href="https://github.com/miiura" class="rodape__midia">Leda<img src="img/github.png" alt="Ícone do Github"></a></li>
+            <li><a href="https://github.com/MatheusRossieri" class="rodape__midia">Matheus<img src="img/github.png" alt="Ícone do Github"></a></li>
+        </ul>
+        <nav>
+            <ul class="rodape__navegacao">
+
+                <li class="rodape__link"><a href="#nav1">Artigos</a></li>
+                <li class="rodape__link"><a href="#nav2">Terapias</a></li>
+                <li class="rodape__link"><a href="#nav3">Sobre</a></li>
+                <li class="rodape__link"><a href="#nav4">Contato</a></li>
+                <li class="rodape__link"><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </footer>
 
     <script src="adminScript.js"></script>
 </body>
