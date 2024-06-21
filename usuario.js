@@ -6,8 +6,8 @@ class Usuario {
         this.cpf = cpf;
     }
 }
+const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
 function cadastrarUsuario(nome, email, senha) {
-    const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
     let i = 0;
     if(usuarios[i] != null){
         for(i; usuarios[i].email != email; i++);
