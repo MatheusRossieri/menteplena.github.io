@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários - Mente Plena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuários</h1>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="email">senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <button type="submit" id="cadastrar">Cadastrar</button>
+        </form>
+        <section id="lista-usuarios">
+            <h2>Usuários Cadastrados</h2>
+            <ul id="usuarios-lista"></ul>
+        </section>
+    </main>
+
+    <script src="adminScript.js"></script>
+</body>
+</html>
