@@ -1,23 +1,6 @@
-class Usuario {
-    constructor(nome, email, senha, cpf) {
-        this.nome = nome;
-        this.email = email;
-        this.senha = senha;
-        this.cpf = cpf;
-    }
-}
 const form = document.querySelector('form');
 
-// Função para cadastrar usuário usando a classe Usuario
-
-
-function cadastrarUsuario(nome, email, senha) {
-    const novoUsuario = new Usuario(nome, email, senha); // Cria um novo objeto Usuario
-    const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
-    usuarios.push(novoUsuario);
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-    exibirUsuarios(); // Atualiza a lista de usuários
-}
+cadastrarUsuario('admin', 'admin@utfpr', 'admin');
 
 // Atualiza a função para usar a classe Usuario
 form.addEventListener('submit', function(event) {
@@ -34,6 +17,7 @@ form.addEventListener('submit', function(event) {
     }
 
     cadastrarUsuario(nome, email, senha); // Cadastra o usuário usando a classe Usuario
+    exibirUsuarios(); // Atualiza a lista de usuários
     form.reset(); // Limpa os campos do formulário
 });
 
