@@ -10,6 +10,8 @@ const form = document.querySelector('form');
 
 // Função para cadastrar usuário usando a classe Usuario
 cadastrarUsuario('admin', 'admin@utfpr', 'admin');
+const usuario = JSON.parse(localStorage.getItem('usuarios') || '[]');
+console.log(usuario);
 
 function cadastrarUsuario(nome, email, senha) {
     const novoUsuario = new Usuario(nome, email, senha); // Cria um novo objeto Usuario
