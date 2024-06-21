@@ -1,4 +1,7 @@
 const form = document.querySelector('form');
+cadastrarUsuario('admin', 'admin@utfpr', 'admin');
+const usuario = JSON.parse(localStorage.getItem('usuarios') || '[]');
+console.log(usuario);
 
 form.addEventListener('submit', function(event){
 
