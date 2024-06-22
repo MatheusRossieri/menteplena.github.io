@@ -1,136 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Home | MentePlena</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link href="css/cabecalho.css" rel="stylesheet">
-        <link href="css/chamada.css" rel="stylesheet">
-        <link href="css/planos.css" rel="stylesheet">
-        <link href="css/destaques.css" rel="stylesheet">
-        <link href="css/terapias.css" rel="stylesheet">
-        <link href="css/sobre.css" rel="stylesheet">
-        <link href="css/contato.css" rel="stylesheet">
-        <link href="css/institucional.css" rel="stylesheet">
-        <link href="css/rodape.css" rel="stylesheet">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Home | MentePlena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/cabecalho.css" rel="stylesheet">
+    <link href="css/chamada.css" rel="stylesheet">
+    <link href="css/planos.css" rel="stylesheet">
+    <link href="css/destaques.css" rel="stylesheet">
+    <link href="css/terapias.css" rel="stylesheet">
+    <link href="css/sobre.css" rel="stylesheet">
+    <link href="css/contato.css" rel="stylesheet">
+    <link href="css/institucional.css" rel="stylesheet">
+    <link href="css/rodape.css" rel="stylesheet">
 
-    <body>
-        <header class="cabecalho container">
-            <img class="cabecalho__logo" src="img/logo-menteplena.svg" alt="Logo da MentePlena" onclick="window.location.href='index.html';">
-            <nav class="cabecalho__navegacao">
-                <ul>
-                    <li class="cabecalho__link"><a href="#nav1">Artigos</a></li>
-                    <li class="cabecalho__link"><a href="#nav2">Terapias</a></li>
-                    <li class="cabecalho__link"><a href="#nav3">Sobre</a></li>
-                    <li class="cabecalho__link"><a href="#nav4">Contato</a></li>
-                    <li class="cabecalho__link"><a href="login.html">Login</a></li>
-                    <li class="cabecalho__link"><a href="cadastro.html">Cadastro</a></li>
+</head>
 
-                    
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section class="chamada container">
-                <h1 class="chamada__titulo">Descubra, entenda, respire</h1>
-                <p class="chamada__texto">O MentePlena é um portal que te ajuda a entender mais sobre o transtorno de ansiedade, e como ele pode afetar o seu dia a dia.</p>
-                <a class="chamada__botao botao" href="#nav3">Saiba mais</a>
-            </section>
-
-            <section id="nav1" class="destaques container">
-                <h2 class="destaques__titulo">Artigos</h2>
-                <h3 class="destaques__subtitulo">Leia nossos artigos informativos sobre ansiedade, seus sintomas, causas e estratégias para lidar com ela.</h3>
-                <a href="https://auniao.pb.gov.br/noticias/caderno_paraiba/brasil-tem-populacao-muito-ansiosa#:~:text=O%20Brasil%20%C3%A9%20considerado%20o,Mundial%20da%20Sa%C3%BAde%20(OMS)">
-                    <figure class="destaques__painel">
-                        <img src="img/depressao.png" alt="Painel do post sobre depressão no brasil" class="destaques__painel-imagem">
-                        <figcaption class="destaques__painel-texto">OMS afirma que Brasil é o país mais ansioso do mundo, e o quinto mais depressivo</figcaption>
-                    </figure>
-                </a>
-
-                <a href="https://www.psicologo.com.br/blog/ansiedade-e-trabalho-como-lidar/#:~:text=Ent%C3%A3o%2C%20tanto%20os%20sintomas%20f%C3%ADsicos,e%20insatisfa%C3%A7%C3%A3o%20generalizada%20com%20o">
-                    <figure class="destaques__painel">
-                        <img src="img/ansiedade-trabalho.png" alt="Painel do post sobre ansiedade no trabalho" class="destaques__painel-imagem">
-                        <figcaption class="destaques__painel-texto">Como a ansiedade pode afetar o seu trabalho? Psicólogos discorrem sobre o tema</figcaption>
-                    </figure>
-                </a>
-
-                <a href="https://brasilescola.uol.com.br/saude/quais-os-riscos-que-ansiedade-pode-trazer-para-aluno.htm#:~:text=Dificuldade%20de%20aprendizagem%3A%20Alunos%20com,acarreta%20uma%20aprendizagem%20pouco%20satisfatória.">
-                    <figure class="destaques__painel">
-                        <img src="img/ansiedade-alunos.png" alt="Painel do post sobre ansiedade em alunos" class="destaques__painel-imagem">
-                        <figcaption class="destaques__painel-texto">A ansiedade prejudica o aluno nos estudos, além de poder desencadear consequências graves</figcaption>
-                    </figure>
-                </a>
-                <a href="mailto:email@example.com" class="destaques__botao botao">Receber destaques por email</a>
-            </section>
-
-            <section id="nav2" class="terapias container">
-                <h2 class="terapias__titulo">Terapias recomendadas</h2>
-                <h3 class="terapias__subtitulo">Descubra diferentes formas de terapia que podem ajudá-lo a lidar com a ansiedade, incluindo terapia cognitivo-comportamental, meditação e yoga.</h3>
-                <ul class="terapias__lista">
-                    <li class="terapias__item terapias__item--psica">
-                        <h2 class="item__titulo">Psicanálise</h2>
-                        <p class="item__texto">Foco no relacionamento do consciente com o inconsciente.</p>
-                    </li>
-                    <li class="terapias__item terapias__item--cognitiva">
-                        <h2 class="item__titulo">Cognitiva-comportamental</h2>
-                        <p class="item__texto">Foco na reestruturação cognitiva sobre emoções e comportamentos.</p>
-                    </li>
-                    <li class="terapias__item terapias__item--gestalt">
-                        <h2 class="item__titulo">Gestalt terapia</h2>
-                        <p class="item__texto">Foco centrado no indivíduo e na sua experiência de vida.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="nav3" class="sobre container">
-                <div class="sobre__conteudo">
-                    <h2 class="sobre__titulo">Sobre</h2>
-                    <p class="sobre__texto">Informando sobre a ansiedade para <strong class="sobre__texto--destaque">todas as pessoas</strong>!</p>
-                    <p class="sobre__texto">
-                        Aqui você encontrará informações sobre ansiedade e maneiras de encontrar terapias adequadas para resolver esse problema. Oferecemos uma variedade de recursos, incluindo artigos informativos, dicas de autocuidado e orientação para encontrar profissionais de saúde mental qualificados. Nossa missão é fornecer um ambiente acolhedor e informativo para aqueles que enfrentam a ansiedade, capacitando-os a buscar ajuda e encontrar as ferramentas necessárias para viver uma vida mais equilibrada e saudável.</p>
-                    <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
-                        Conte com uma equipe especializada para fornecer informações e recursos de alta qualidade sobre ansiedade, atendendo necessidades específicas de cada pessoa.
-                    </p>
-                </div>
-                <img src="img/terapia.png" alt="Sobre a MentePlena" class="sobre__imagem">
-            </section>
-
-            <section id="nav4" class="contato container">
-                <h2 class="contato__titulo">Contato</h2>
-                <h3 class="contato__subtitulo">Entre em contato com a gente!</h3>
-                <a href="mailto:contato@menteplena.com" class="contato__botao botao">Nosso email</a>
-                <a href="tel:+559999999999" class="contato__botao botao">Nosso celular</a>
-            </section>
+<body>
+    <header class="cabecalho container">
+        <img class="cabecalho__logo" src="img/logo-menteplena.svg" alt="Logo da MentePlena"
+            onclick="window.location.href='index.html';">
+        <nav class="cabecalho__navegacao">
+            <ul>
+                <li class="cabecalho__link"><a href="#nav1">Artigos</a></li>
+                <li class="cabecalho__link"><a href="#nav2">Terapias</a></li>
+                <li class="cabecalho__link"><a href="#nav3">Sobre</a></li>
+                <li class="cabecalho__link"><a href="#nav4">Contato</a></li>
+                <li class="cabecalho__link"><a href="login.html">Login</a></li>
+                <li class="cabecalho__link"><a href="cadastro.html">Cadastro</a></li>
 
 
-        </main>
-
-        <footer class="rodape container">
-            <h2 class="rodape__titulo">Desenvolvedores</h2>
-            <img src="img/logo-menteplena2.svg" alt="Logo da menteplena" class="rodape__logo">
-            <ul class="rodape__social">
-                <li><a href="https://github.com/fabriciocustodio" class="rodape__midia">Fabrício<img src="img/github.png" alt="Ícone do Github"></a></li>
-                <li><a href="https://github.com/miiura" class="rodape__midia">Leda<img src="img/github.png" alt="Ícone do Github"></a></li>
-                <li><a href="https://github.com/MatheusRossieri" class="rodape__midia">Matheus<img src="img/github.png" alt="Ícone do Github"></a></li>
             </ul>
-            <nav>
-                <ul class="rodape__navegacao">
+        </nav>
+    </header>
 
-                    <li class="rodape__link"><a href="#nav1">Artigos</a></li>
-                    <li class="rodape__link"><a href="#nav2">Terapias</a></li>
-                    <li class="rodape__link"><a href="#nav3">Sobre</a></li>
-                    <li class="rodape__link"><a href="#nav4">Contato</a></li>
-                    <li class="rodape__link"><a href="admin.html">Admin</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+    <main>
+        <section class="chamada container">
+            <h1 class="chamada__titulo">Descubra, entenda, respire</h1>
+            <p class="chamada__texto">O MentePlena é um portal que te ajuda a entender mais sobre o transtorno de
+                ansiedade, e como ele pode afetar o seu dia a dia.</p>
+            <a class="chamada__botao botao" href="#nav3">Saiba mais</a>
+        </section>
+
+        <section id="nav1" class="destaques container">
+            <h2 class="destaques__titulo">Artigos</h2>
+            <h3 class="destaques__subtitulo">Leia nossos artigos informativos sobre ansiedade, seus sintomas, causas e
+                estratégias para lidar com ela.</h3>
+            <a
+                href="https://auniao.pb.gov.br/noticias/caderno_paraiba/brasil-tem-populacao-muito-ansiosa#:~:text=O%20Brasil%20%C3%A9%20considerado%20o,Mundial%20da%20Sa%C3%BAde%20(OMS)">
+                <figure class="destaques__painel">
+                    <img src="img/depressao.png" alt="Painel do post sobre depressão no brasil"
+                        class="destaques__painel-imagem">
+                    <figcaption class="destaques__painel-texto">OMS afirma que Brasil é o país mais ansioso do mundo, e
+                        o quinto mais depressivo</figcaption>
+                </figure>
+            </a>
+
+            <a
+                href="https://www.psicologo.com.br/blog/ansiedade-e-trabalho-como-lidar/#:~:text=Ent%C3%A3o%2C%20tanto%20os%20sintomas%20f%C3%ADsicos,e%20insatisfa%C3%A7%C3%A3o%20generalizada%20com%20o">
+                <figure class="destaques__painel">
+                    <img src="img/ansiedade-trabalho.png" alt="Painel do post sobre ansiedade no trabalho"
+                        class="destaques__painel-imagem">
+                    <figcaption class="destaques__painel-texto">Como a ansiedade pode afetar o seu trabalho? Psicólogos
+                        discorrem sobre o tema</figcaption>
+                </figure>
+            </a>
+
+            <a
+                href="https://brasilescola.uol.com.br/saude/quais-os-riscos-que-ansiedade-pode-trazer-para-aluno.htm#:~:text=Dificuldade%20de%20aprendizagem%3A%20Alunos%20com,acarreta%20uma%20aprendizagem%20pouco%20satisfatória.">
+                <figure class="destaques__painel">
+                    <img src="img/ansiedade-alunos.png" alt="Painel do post sobre ansiedade em alunos"
+                        class="destaques__painel-imagem">
+                    <figcaption class="destaques__painel-texto">A ansiedade prejudica o aluno nos estudos, além de poder
+                        desencadear consequências graves</figcaption>
+                </figure>
+            </a>
+            <a href="mailto:email@example.com" class="destaques__botao botao">Receber destaques por email</a>
+        </section>
+
+        <section id="nav2" class="terapias container">
+            <h2 class="terapias__titulo">Terapias recomendadas</h2>
+            <h3 class="terapias__subtitulo">Descubra diferentes formas de terapia que podem ajudá-lo a lidar com a
+                ansiedade, incluindo terapia cognitivo-comportamental, meditação e yoga.</h3>
+            <ul class="terapias__lista">
+                <li class="terapias__item terapias__item--psica">
+                    <h2 class="item__titulo">Psicanálise</h2>
+                    <p class="item__texto">Foco no relacionamento do consciente com o inconsciente.</p>
+                </li>
+                <li class="terapias__item terapias__item--cognitiva">
+                    <h2 class="item__titulo">Cognitiva-comportamental</h2>
+                    <p class="item__texto">Foco na reestruturação cognitiva sobre emoções e comportamentos.</p>
+                </li>
+                <li class="terapias__item terapias__item--gestalt">
+                    <h2 class="item__titulo">Gestalt terapia</h2>
+                    <p class="item__texto">Foco centrado no indivíduo e na sua experiência de vida.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="nav3" class="sobre container">
+            <div class="sobre__conteudo">
+                <h2 class="sobre__titulo">Sobre</h2>
+                <p class="sobre__texto">Informando sobre a ansiedade para <strong class="sobre__texto--destaque">todas
+                        as pessoas</strong>!</p>
+                <p class="sobre__texto">
+                    Aqui você encontrará informações sobre ansiedade e maneiras de encontrar terapias adequadas para
+                    resolver esse problema. Oferecemos uma variedade de recursos, incluindo artigos informativos, dicas
+                    de autocuidado e orientação para encontrar profissionais de saúde mental qualificados. Nossa missão
+                    é fornecer um ambiente acolhedor e informativo para aqueles que enfrentam a ansiedade,
+                    capacitando-os a buscar ajuda e encontrar as ferramentas necessárias para viver uma vida mais
+                    equilibrada e saudável.</p>
+                <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                    Conte com uma equipe especializada para fornecer informações e recursos de alta qualidade sobre
+                    ansiedade, atendendo necessidades específicas de cada pessoa.
+                </p>
+            </div>
+            <img src="img/terapia.png" alt="Sobre a MentePlena" class="sobre__imagem">
+        </section>
+
+        <section id="nav4" class="contato container">
+            <h2 class="contato__titulo">Contato</h2>
+            <h3 class="contato__subtitulo">Entre em contato com a gente!</h3>
+            <a href="mailto:contato@menteplena.com" class="contato__botao botao">Nosso email</a>
+            <a href="tel:+559999999999" class="contato__botao botao">Nosso celular</a>
+        </section>
+
+
+    </main>
+
+    <footer class="rodape container">
+        <h2 class="rodape__titulo">Desenvolvedores</h2>
+        <img src="img/logo-menteplena2.svg" alt="Logo da menteplena" class="rodape__logo">
+        <ul class="rodape__social">
+            <li><a href="https://github.com/fabriciocustodio" class="rodape__midia">Fabrício<img src="img/github.png"
+                        alt="Ícone do Github"></a></li>
+            <li><a href="https://github.com/miiura" class="rodape__midia">Leda<img src="img/github.png"
+                        alt="Ícone do Github"></a></li>
+            <li><a href="https://github.com/MatheusRossieri" class="rodape__midia">Matheus<img src="img/github.png"
+                        alt="Ícone do Github"></a></li>
+        </ul>
+        <nav>
+            <ul class="rodape__navegacao">
+
+                <li class="rodape__link"><a href="#nav1">Artigos</a></li>
+                <li class="rodape__link"><a href="#nav2">Terapias</a></li>
+                <li class="rodape__link"><a href="#nav3">Sobre</a></li>
+                <li class="rodape__link"><a href="#nav4">Contato</a></li>
+                <li class="rodape__link"><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
