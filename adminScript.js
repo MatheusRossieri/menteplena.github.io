@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const lista = document.querySelector('li');
+const deletarTudo = document.querySelector('#deletar-tudo')
 
 cadastrarUsuario('admin', 'admin@utfpr', 'admin');
 
@@ -26,10 +27,6 @@ form.addEventListener('submit', function(event) {
     exibirUsuarios(); // Atualiza a lista de usuários
     form.reset(); // Limpa os campos do formulário
 });
-
-function deletarUsuario(id){
-
-}
 function exibirUsuarios() {
     var usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
     const listaUsuarios = document.getElementById('usuarios-lista');
@@ -51,61 +48,10 @@ function exibirUsuarios() {
     });
 }
 
-
+deletarTudo.addEventListener('click', () =>{
+    localStorage.setItem('usuarios',"[]");
+    exibirUsuarios();
+});
 // Exibe usuários na lista após o cadastro e ao carregar a página
 exibirUsuarios();
 form.addEventListener('submit', exibirUsuarios);
-
-
-
-/*const listaUsuarios = document.querySelector('#lista-usuarios');
-const list = document.createElement('ul');
-
-let users = [
-    {
-        id:0,
-        name:'joao',
-        email:'jao@mail',
-        idade:18,
-    },
-    {
-        id:1,
-        name:'joao',
-        email:'jao@mail',
-        idade:18,
-    }
-]
-
-const usersLoop = (users) => {
-    users.forEach(el => {
-        element = configDOM(el);
-        appendDOM(element);
-    })
-}
-
-const configDOM = (data) => {
-    const li = document.createElement('li');
-    const button = document.createElement('button');
-    li.textContent(`${data.name}, ${email}, idade:${idade}`);
-    button.title = 'Deletar';
-    button.addEventListener('onclick', () => { 
-        users = users.filter(el => el.id != data.id); 
-        localStorage.setItem('users', JSON.stringify(users));
-        const updatedUsers = JSON.parse(localStorage.getItem('users'));
-        list.innerHTML = '';
-        updatedUsers.forEach(el =>  appendDOM(configDOM(el)))
-    })
-    li.appendChild(button);
-    return li;
-}
-
-const appendDOM = (el) => {
-    list.appendChild(el);
-}
-
-listaUsuarios.innerHTML = list;*/
-
-
-
-
-
