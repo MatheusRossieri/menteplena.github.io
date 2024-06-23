@@ -48,10 +48,12 @@ function exibirUsuarios() {
     });
 }
 
-deletarTudo.addEventListener('click', () =>{
-    localStorage.setItem('usuarios',"[]");
-    exibirUsuarios();
+const deletarTudo = document.getElementById('deletarTudo');
+deletarTudo.addEventListener('click', () => {
+    localStorage.setItem('usuarios', '[]'); // Reseta a lista de usuários no localStorage
+    exibirUsuarios(); // Atualiza a exibição dos usuários
 });
+
 // Exibe usuários na lista após o cadastro e ao carregar a página
 exibirUsuarios();
 form.addEventListener('submit', exibirUsuarios);
