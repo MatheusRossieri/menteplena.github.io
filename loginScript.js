@@ -13,7 +13,7 @@ form.addEventListener('submit', function(event){
     var i = 0;
     for(i; usuarios[i].email != email; i++);
     if(usuarios[i].senha ==  senha){
-        location.replace("perfil.html");
+        location.replace("index.html");
     }
     else( alert("Senha Incorreta tente novamente"));
     form.reset();
