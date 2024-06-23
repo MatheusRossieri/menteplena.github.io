@@ -23,7 +23,6 @@ form.addEventListener('submit', function(event) {
         alert("Usuário Ja existente!")
     }
     // Cadastra o usuário usando a classe Usuario
-
     exibirUsuarios(); // Atualiza a lista de usuários
     form.reset(); // Limpa os campos do formulário
 });
