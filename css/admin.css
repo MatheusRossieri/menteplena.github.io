@@ -31,6 +31,12 @@
 h1{
     color: #127475;
     font-size: 64px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 25px;
+    color:#127475;
 }
 
 form {
@@ -52,6 +58,10 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+:placeholder-shown{
+    color: #127475;
 }
 
 #lista-usuarios{
