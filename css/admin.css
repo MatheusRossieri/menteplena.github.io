@@ -25,6 +25,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+}
+
+#cadastro{
+    color: #127475;
+    font-size: 64px;
 }
 
 form {
