@@ -8,22 +8,15 @@ class Usuario {
 }
 const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
 
-function cadastrarUsuario(nome, email, senha, cpf) {
-    let i = 0;
-    for(i; usuarios[i].cpf != cpf; i++);
-    if(usuarios[i].cpf == cpf){
-        return false;
-    }
-    if(usuarios[i] != null){
-        for(i; usuarios[i].email != email; i++);
-        if(usuarios[i].email != email){
-            memoriaTemp(nome, email, senha, cpf);
-            return true;
-        }
+function verificaUsuario(email){
+    return some(usuario => usuario.email ==  email)
+}
+function cadastrarUsuario(nome, email, senha, cpf){
+    if(usuarios[i].email != email){
+        memoriaTemp(nome, email, senha, cpf);
     }
     else{
-        memoriaTemp(nome, email, senha, cpf);
-        return true;
+     memoriaTemp(nome, email, senha, cpf);
     }
 }
 

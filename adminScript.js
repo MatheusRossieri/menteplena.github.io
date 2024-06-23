@@ -10,14 +10,20 @@ form.addEventListener('submit', function(event) {
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value; // Obtém o valor do campo de senha
-
+    const cpf = document.getElementById('cpf').value;
     // Validação básica (opcional)
-    if (nome === '' || email === '' || senha === '') {
+    if (nome === '' || email === '' || senha === ''|| cpf === '' ) {
         alert('Preencha todos os campos!');
         return;
     }
+    if(verificaUsuario(email)){
+        cadastrarUsuario(nome, email, senha, cpf);
+    }
+    else{
+        alert("Usuário Ja existente!")
+    }
+    // Cadastra o usuário usando a classe Usuario
 
-    cadastrarUsuario(nome, email, senha); // Cadastra o usuário usando a classe Usuario
     exibirUsuarios(); // Atualiza a lista de usuários
     form.reset(); // Limpa os campos do formulário
 });
