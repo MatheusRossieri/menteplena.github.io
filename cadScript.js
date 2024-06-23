@@ -13,8 +13,21 @@ form.addEventListener('submit', function(event){
     const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
 
     var i = 0;
-    for(i; usuarios[i].cpf != cpf; i++);
+    if(cadastrarUsuario(nome, email, senha, cpf)){
+
+    }
+    else
 
     location.replace("login.html");
     form.reset();
 })
+
+function trocaClasse(elemento, antiga, nova) {
+    elemento.classList.remove(antiga);
+    elemento.classList.add(nova);
+}
+
+setTimeout(function() {
+    var div = document.querySelector('div');
+    trocaClasse(div, 'azul', 'verde');
+}, 2000);

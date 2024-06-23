@@ -48,15 +48,32 @@
                     <label for="email">senha:</label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
+                <div class="campo">
+                    <label for="cpf">cpf:</label>
+                    <input type="text" id="cpf" name="cpf" required>
+                </div>
     
                 <button type="submit" id="cadastrar">Cadastrar</button>
             </form>
         </div>
         <section id="lista-usuarios">
-            <h2>Usuários Cadastrados</h2>
-            <ul id="usuarios-lista"></ul>
+            <h2>Usuários Cadastrados :</h2>
+            <ul id="usuarios-lista">
+                <li>aaa - aaa@aaa - 1234 - undefined
+                    <button>Deletar</button>
+                </li>
+                <li>aaa - aaa@aaa - 1234 - undefined
+                    <button>Deletar</button>
+                </li>
+                <li>aaa - aaa@aaa - 1234 - undefined
+                    <button>Deletar</button>
+                </li>
+            </ul>
         </section>
-    </main>    
+    </main>
+
+    <script src="usuario.js"></script>
+    <script src="adminScript.js"></script>
 
     <footer class="rodape container">
         <h2 class="rodape__titulo">Desenvolvedores</h2>
@@ -77,8 +94,6 @@
             </ul>
         </nav>
     </footer>
-    
-    <script src="adminScript.js"></script>
     
 </body>
 </html>
