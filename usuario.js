@@ -8,8 +8,19 @@ class Usuario {
 }
 const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
 
-function verificaUsuario(email){
-    return some(usuario => usuario.email ==  email)
+function verificaUsuario(atributo, conteudo){
+    if(atributo == 'email'){
+        return some(usuario => usuario.email == conteudo);
+    }
+    else if(atributo == 'senha'){
+        return some(usuario => usuario.senha == conteudo);
+    }
+    else if(atributo == 'nome'){
+        return some(usuario => usuario.nome == conteudo);
+    }
+    else
+        return some(usuario => usuario.cpf == conteudo);
+    
 }
 function cadastrarUsuario(nome, email, senha, cpf){
     memoriaTemp(nome, email, senha, cpf);
@@ -18,5 +29,5 @@ function cadastrarUsuario(nome, email, senha, cpf){
 function memoriaTemp(nome, email, senha, cpf){
     const novoUsuario = new Usuario(nome, email, senha, cpf); // Cria um novo objeto Usuario
     usuarios.push(novoUsuario);
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    localStorage.setItem('usuarios', JSON.stringifconteudo(usuarios));
 }
