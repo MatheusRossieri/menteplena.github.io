@@ -30,5 +30,5 @@ function cadastrarUsuario(nome, email, senha, cpf){
 function memoriaTemp(nome, email, senha, cpf){
     const novoUsuario = new Usuario(nome, email, senha, cpf); // Cria um novo objeto Usuario
     usuarios.push(novoUsuario);
-    localStorage.setItem('usuarios', JSON.stringifconteudo(usuarios));
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
 }
