@@ -7,8 +7,9 @@ class Usuario {
     }
 }
 const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
-cadastrarUsuario('admin', 'admin@utfpr', 'admin', '12345678900');
-
+if(verificaUsuario('email', 'admin@utfpr')){
+    cadastrarUsuario('admin', 'admin@utfpr', 'admin', '12345678900');
+}
 function verificaUsuario(atributo, conteudo){
     if(atributo == 'email'){
         return usuarios.some(usuario => usuario.email == conteudo);
