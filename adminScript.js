@@ -1,8 +1,6 @@
 const form = document.querySelector('form');
 const lista = document.querySelector('li');
-const deletarTudo = document.querySelector('#deletar-tudo')
-
-cadastrarUsuario('admin', 'admin@utfpr', 'admin');
+const deletarTudo = document.querySelector('#deletarTudo')
 
 // Atualiza a função para usar a classe Usuario
 form.addEventListener('submit', function(event) {

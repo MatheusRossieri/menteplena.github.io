@@ -1,5 +1,4 @@
 const form = document.querySelector('form');
-cadastrarUsuario('admin', 'admin@utfpr', 'admin');
 
 form.addEventListener('submit', function(event){
 

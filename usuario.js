@@ -7,20 +7,21 @@ class Usuario {
     }
 }
 const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
+cadastrarUsuario('admin', 'admin@utfpr', 'admin', '12345678900');
 
 function verificaUsuario(atributo, conteudo){
     if(atributo == 'email'){
-        return some(usuario => usuario.email == conteudo);
+        return usuarios.some(usuario => usuario.email == conteudo);
     }
     else if(atributo == 'senha'){
-        return some(usuario => usuario.senha == conteudo);
+        return usuarios.some(usuario => usuario.senha == conteudo);
     }
     else if(atributo == 'nome'){
-        return some(usuario => usuario.nome == conteudo);
+        return usuarios.some(usuario => usuario.nome == conteudo);
     }
-    else
-        return some(usuario => usuario.cpf == conteudo);
-    
+    else{
+        return usuarios.some(usuario => usuario.cpf == conteudo);
+    }
 }
 function cadastrarUsuario(nome, email, senha, cpf){
     memoriaTemp(nome, email, senha, cpf);
