@@ -12,12 +12,7 @@ function verificaUsuario(email){
     return some(usuario => usuario.email ==  email)
 }
 function cadastrarUsuario(nome, email, senha, cpf){
-    if(usuarios[i].email != email){
-        memoriaTemp(nome, email, senha, cpf);
-    }
-    else{
-     memoriaTemp(nome, email, senha, cpf);
-    }
+    memoriaTemp(nome, email, senha, cpf);
 }
 
 function memoriaTemp(nome, email, senha, cpf){
