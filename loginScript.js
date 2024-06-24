@@ -10,10 +10,10 @@ form.addEventListener('submit', function(event){
     const senha = document.getElementById('senha').value;
     const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
 
-    var i = 0;
-    for(i; usuarios[i].email != email; i++);
-    if(usuarios[i].senha ==  senha){
-        location.replace("index.html");
+    if(verificaUsuario('email', email)){
+        if(verificaUsuario('senha', senha)){
+            location.replace("index.html");
+        }
     }
     else( alert("Senha Incorreta tente novamente"));
     form.reset();
